@@ -1,0 +1,30 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper .result-text{
+    color: green;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wrapper .result-text-yellow{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.wrapper .result-text-red{
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wrapper .btn-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 90%;
+    height: 30%;
+}

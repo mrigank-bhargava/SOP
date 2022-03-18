@@ -1,0 +1,23 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .heading{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.wrapper .form{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
