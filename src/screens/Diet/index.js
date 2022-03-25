@@ -5,6 +5,9 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import VegAudioPlayer from '../../Components/AudioPlayer/VegAudioPlayer'
+import VeganAudio from '../../Components/AudioPlayer/VeganAudio'
+import NonVegAudio from '../../Components/AudioPlayer/NonVegAudio'
 
 const style = {
   position: 'absolute',
@@ -42,6 +45,7 @@ const Diet = () => {
           <Typography id='modal-modal-title' variant='h6' component='h2'>
             Veg Diet Plan
           </Typography>
+          <VegAudioPlayer />          
           <Typography id='modal-modal-description' sx={{ mt: 2 }}>
             Breakfast:
             <br />
@@ -90,6 +94,7 @@ const Diet = () => {
           <Typography id='modal-modal-title' variant='h6' component='h2'>
             Non Veg Diet Plan
           </Typography>
+          <NonVegAudio />
           <Typography id='modal-modal-description' sx={{ mt: 2 }}>
             Breakfast:
             <br />
@@ -136,6 +141,7 @@ const Diet = () => {
           <Typography id='modal-modal-title' variant='h6' component='h2'>
             Vegan Diet Plan
           </Typography>
+          <VeganAudio />
           <Typography id='modal-modal-description' sx={{ mt: 2 }}>
             Breakfast:
             <br />

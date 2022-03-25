@@ -3,6 +3,7 @@ import Login from './screens/Login';
 import { Routes, Route, Link } from 'react-router-dom';
 import Result from './screens/Result';
 import Diet from './screens/Diet';
+import Exercise from './screens/Exercise';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/result' element={<Result />} />
         <Route path='/diet' element={<Diet />} />
+        <Route path='/exercise' element={<Exercise />} />
       </Routes>
     </div>
   );

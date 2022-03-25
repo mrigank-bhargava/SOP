@@ -12,6 +12,18 @@
     font-weight: bold;
 }
 
+.wrapper .logoBits{
+    margin: 50px auto 50px;
+}
+
+.wrapper .initiative{
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .wrapper .form{
     width: 90%;
     height: 30%;
