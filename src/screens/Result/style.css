@@ -28,3 +28,10 @@
     width: 90%;
     height: 30%;
 }
+
+.smallLogoBits{
+    position: absolute;
+    width: 25px;
+    right: 5px;
+    top: 5px;
+}

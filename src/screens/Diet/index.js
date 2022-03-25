@@ -35,6 +35,10 @@ const Diet = () => {
   const handleCloseVegan = () => setOpenVegan(false);
   return (
     <div className='wrapper-diet'>
+       <img
+        className="smalllogoBits"
+        src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
+      ></img>
       <Modal
         open={open}
         onClose={handleClose}

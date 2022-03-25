@@ -16,7 +16,10 @@ const Dashboard = () => {
   };
   return (
     <div className="wrapper">
-   
+      <img
+        className="smalllogoBits"
+        src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
+      ></img>
       <TextField
         id="outlined-basic"
         sx={{ m: 1, width: "35ch" }}

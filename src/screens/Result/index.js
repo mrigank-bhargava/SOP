@@ -14,7 +14,10 @@ const Result = () => {
     if (value < 140) {
       return (
         <>
-       
+          <img
+            className="smalllogoBits"
+            src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
+          ></img>
           <span className="result-text">You are fit and healthy</span>
         </>
       );
@@ -31,7 +34,10 @@ const Result = () => {
     if (value >= 140 && value < 180) {
       return (
         <>
-       
+          <img
+            className="smalllogoBits"
+            src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
+          ></img>
           <span className="result-text-yellow">
             You are pre-diabetic. Make sure to follow the right diet and
             exercises listed below.
@@ -54,10 +60,17 @@ const Result = () => {
     if (value >= 180) {
       return (
         <>
-       
+          <img
+            className="smalllogoBits"
+            src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
+          ></img>
           <span className="result-text-red">You are diabetic.</span>
           <div className="btn-div">
-            <Button variant="contained" color="secondary">
+            <Button
+              onClick={exerciseHandler}
+              variant="contained"
+              color="secondary"
+            >
               Exercise
             </Button>
             <Button onClick={dietHandler} variant="contained" color="success">

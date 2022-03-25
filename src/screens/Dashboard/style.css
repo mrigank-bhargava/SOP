@@ -5,3 +5,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+
+.smalllogoBits{
+    position: absolute;
+    width: 50px;
+    right:30px;
+    top: 15px;
+}
