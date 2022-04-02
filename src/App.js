@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Result from './screens/Result';
 import Diet from './screens/Diet';
 import Exercise from './screens/Exercise';
+import Entries from './screens/Entries';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/result' element={<Result />} />
         <Route path='/diet' element={<Diet />} />
         <Route path='/exercise' element={<Exercise />} />
+        <Route path='/entries' element={<Entries />} />
       </Routes>
     </div>
   );

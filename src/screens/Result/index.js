@@ -1,14 +1,41 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Result = () => {
   const [value, setValue] = useState();
   let navigate = useNavigate();
+  const location = useLocation();
+  let entry = location.state;
+
   useEffect(() => {
     setValue(parseInt(localStorage.getItem("value")));
   }, [setValue]);
+
+  var a = [];
+  // Parse the serialized data back into an aray of objects
+  a = JSON.parse(localStorage.getItem("session")) || [];
+  // Push the new data (whether it be an object or anything else) onto the array
+  a.push(entry);
+  // Alert the array value
+  // Re-serialize the array back into a string and store it in localStorage
+  localStorage.setItem("session", JSON.stringify(a));
+
+  console.log("SESSS", JSON.parse(localStorage.getItem("session")));
+
+  let chars = JSON.parse(localStorage.getItem("session"));
+
+  const map = {};
+  const newArray = [];
+  chars.forEach((el) => {
+    if (!map[JSON.stringify(el)]) {
+      map[JSON.stringify(el)] = true;
+      newArray.push(el);
+    }
+  });
+
+  localStorage.setItem("entries", JSON.stringify(newArray));
 
   const renderItems = () => {
     if (value < 140) {
