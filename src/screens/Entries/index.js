@@ -23,8 +23,6 @@ const Login = () => {
               {index +
                 " Username: " +
                 item.username +
-                " Password: " +
-                item.password +
                 " Glucose Level: " +
                 item.glucose}
             </p>
