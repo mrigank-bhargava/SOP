@@ -22,11 +22,12 @@ const Login = () => {
 
   return (
     <div className="wrapper">
-      <span className="initiative">Non-Invasive Glucose Monitor By</span>
+      <span className="initiative">Diabetes monitoring and care management system by EEE Department</span>
       <img
         className="logoBits"
         src="https://upload.wikimedia.org/wikipedia/en/d/d3/BITS_Pilani-Logo.svg"
       ></img>
+      {/* <span className="initiative">EEE Department</span> */}
       <span className="heading">Welcome</span>
       <div className="form">
         <TextField

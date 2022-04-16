@@ -58,6 +58,10 @@ const Result = () => {
       navigate("/exercise");
     };
 
+    const doctorHandler = () => {
+      navigate("/doctor");
+    };
+
     if (value >= 140 && value < 180) {
       return (
         <>
@@ -103,7 +107,7 @@ const Result = () => {
             <Button onClick={dietHandler} variant="contained" color="success">
               Diet
             </Button>
-            <Button variant="contained" color="error">
+            <Button variant="contained" color="error" onClick={doctorHandler}>
               Call a doctor
             </Button>
           </div>

@@ -38,6 +38,12 @@ const Dashboard = () => {
         label="Enter your blood Glucose Level"
         variant="outlined"
       />
+      <TextField
+        id="outlined-basic"
+        sx={{ m: 1, width: "35ch" }}
+        label="Enter your weight (in kgs)"
+        variant="outlined"
+      />
       <div className="btn-div">
         <Button variant="contained" onClick={submitHandler}>
           Submit

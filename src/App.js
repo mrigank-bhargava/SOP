@@ -5,6 +5,7 @@ import Result from './screens/Result';
 import Diet from './screens/Diet';
 import Exercise from './screens/Exercise';
 import Entries from './screens/Entries';
+import Doctor from './screens/Doctor';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/diet' element={<Diet />} />
         <Route path='/exercise' element={<Exercise />} />
         <Route path='/entries' element={<Entries />} />
+        <Route path='/doctor' element={<Doctor />} />
       </Routes>
     </div>
   );
